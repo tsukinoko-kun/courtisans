@@ -1,0 +1,99 @@
+:root {
+    font-family: serif;
+}
+
+.qrs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.qr {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.qr--zoom {
+    position: fixed;
+    inset: 0;
+    padding: 1rem;
+    background-color: black;
+}
+.qr svg {
+    padding: 1rem;
+    background-color: white;
+    margin: auto;
+}
+
+.btn {
+    display: block;
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+    background-color: white;
+    color: black;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        ". icon pts"
+        "text text text";
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.card--light {
+    background-color: antiquewhite;
+    color: black;
+}
+
+.card--dark {
+    background-color: darkslategray;
+    color: ghostwhite;
+}
+
+.card__icon {
+    grid-area: icon;
+    text-align: center;
+    margin: auto;
+}
+
+.card__pts {
+    grid-area: pts;
+    text-align: center;
+    margin: auto;
+    font-size: 2rem;
+}
+
+.card__text {
+    grid-area: text;
+    text-align: center;
+    margin: auto;
+    text-wrap: balance;
+}
+
+.cards {
+    display: grid;
+    gap: 1rem;
+}
+
+@media (orientation: portrait) {
+    .cards {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+@media (orientation: landscape) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        gap: 1rem;
+    }
+}
