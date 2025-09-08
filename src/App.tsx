@@ -69,7 +69,7 @@ function repeat(n: number) {
 function CardDisplay(props: { c: Card; color: "light" | "dark" }) {
   return (
     <div className={`card card--${props.color}`}>
-      <img className="card__icon" src={getSymbol(props.c.symbol)} />
+      <img className="card__icon" src={getSymbol(props.c.symbol)} alt="" />
       <span className="card__pts">{props.c.points}PTS</span>
       <span className="card__text">{props.c.text}</span>
     </div>

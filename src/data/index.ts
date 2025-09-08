@@ -25,6 +25,7 @@ import fishIcon from "../assets/fish.svg";
 import frogIcon from "../assets/frog.svg";
 import nightingaleIcon from "../assets/nightingale.svg";
 import rabbitIcon from "../assets/rabbit.svg";
+import queenIcon from "../assets/queen.svg";
 
 export function getSymbol(symbol: (typeof Symbol)[keyof typeof Symbol]) {
   switch (symbol) {
@@ -41,15 +42,15 @@ export function getSymbol(symbol: (typeof Symbol)[keyof typeof Symbol]) {
     case Symbol.NIGHTINGALE:
       return nightingaleIcon;
     case Symbol.SPY:
-      return "🕵️‍♂️";
+      return "";
     case Symbol.NOBLE:
-      return "👑";
+      return "";
     case Symbol.ASSASSIN:
-      return "🧙‍♂️";
+      return "";
     case Symbol.GUARD:
-      return "💂‍♂️";
+      return "";
     case Symbol.QUEEN:
-      return "👸";
+      return queenIcon;
     default:
       return "";
   }
