@@ -90,6 +90,14 @@ function App() {
 
   return (
     <>
+      <p>Karten entfernen:</p>
+      <ul>
+        <li>Zwei Spieler: 30 Karten</li>
+        <li>Drei Spieler: 18 Karten</li>
+        <li>Vier Spieler: 6 Karten</li>
+        <li>Fünf Spieler: Keine Karten</li>
+      </ul>
+      <p>Jeder Spieler bekommt drei Karten.</p>
       <button className="btn" onClick={() => setPlaying(!playing)}>
         Play
       </button>

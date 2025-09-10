@@ -66,6 +66,8 @@
     grid-area: icon;
     text-align: center;
     margin: auto;
+    aspect-ratio: auto;
+    max-height: 4rem;
 }
 
 .card__pts {
